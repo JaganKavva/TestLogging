@@ -1,10 +1,7 @@
 pipeline {
     agent any
-    stages{
-        stage('Build'){
-            steps {
-                script{
-                properties{
+    script{
+        properties{
                     logging{
                     pollLogging true
                     pruneDays 20
@@ -14,7 +11,10 @@ pipeline {
                        }
                    }
                 }
-               }
+              }
+    stages{
+        stage('Build'){
+            steps {                
                 echo "Test Logging"
             }
             post {
