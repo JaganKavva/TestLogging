@@ -1,7 +1,7 @@
 pipeline {
     agent any
     
-        properties{
+        properties([ {
                     logging{
                     pollLogging true
                     pruneDays 20
@@ -10,7 +10,7 @@ pipeline {
                             level 'FINE'
                        }
                    }
-                }
+                }  )]
    
     stages{
         stage('Build'){
