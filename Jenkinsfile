@@ -3,6 +3,7 @@ pipeline {
     stages{
         stage('Build'){
             steps {
+                script{
                 properties{
                     logging{
                     pollLogging true
@@ -13,6 +14,7 @@ pipeline {
                        }
                    }
                 }
+               }
                 echo "Test Logging"
             }
             post {
