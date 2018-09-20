@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    script{
+    
         properties{
                     logging{
                     pollLogging true
@@ -11,7 +11,7 @@ pipeline {
                        }
                    }
                 }
-              }
+   
     stages{
         stage('Build'){
             steps {                
