@@ -1,8 +1,7 @@
 pipeline {
-    agent any
-    
-       properties{
-        logging{
+    agent any    
+       options{
+           logging{
             pollLogging true
             pruneDays 20
             target{
