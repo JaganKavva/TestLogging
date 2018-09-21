@@ -1,16 +1,16 @@
 pipeline {
     agent any
     
-        properties([ {
-                    logging{
-                    pollLogging true
-                    pruneDays 20
-                          target{
-                            name 'org.techworld.sonar'
-                            level 'FINE'
-                       }
-                   }
-                }  )]
+       properties{
+        logging{
+            pollLogging true
+            pruneDays 20
+            target{
+                name 'org.techworld.sonar'
+                level 'FINE'
+            }
+        }
+    }
    
     stages{
         stage('Build'){
