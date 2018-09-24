@@ -1,9 +1,6 @@
 def gitUrl = 'git://github.com/JaganKavva/TestLogging'
 
-job('test-job') {
-    options {
-     buildDiscarder(logRotator(daysToKeepStr: '180'))
-    }
+job('test-job') {    
     scm {
         git(gitUrl)
     }
