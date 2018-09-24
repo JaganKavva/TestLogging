@@ -1,4 +1,4 @@
-def gitUrl = 'git://github.com/test/test'
+def gitUrl = 'git://github.com/JaganKavva/TestLogging'
 
 job('test-job') {
     options {
